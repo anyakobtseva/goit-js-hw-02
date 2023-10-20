@@ -1,0 +1,154 @@
+{
+    "sourceFile": "task_4.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 34,
+            "patches": [
+                {
+                    "date": 1697840819272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697840827409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-fu\n\\ No newline at end of file\n+function getShippingCost(country) {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697840834158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-function getShippingCost(country) {}\n\\ No newline at end of file\n+function getShippingCost(country) {\n+\n+}\n+\n"
+                },
+                {
+                    "date": 1697840848446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,10 @@\n function getShippingCost(country) {\n \n }\n \n+console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n+console.log(getShippingCost(\"Germany\")); // \"Sorry, there is no delivery to your country\"\n+console.log(getShippingCost(\"China\")); // \"Shipping to China will cost 100 credits\"\n+console.log(getShippingCost(\"Chile\")); // \"Shipping to Chile will cost 250 credits\"\n+console.log(getShippingCost(\"Jamaica\")); // \"Shipping to Jamaica will cost 120 credits\"\n+console.log(getShippingCost(\"Sweden\")); // \"Sorry, there is no delivery to your country\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1697840895855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function getShippingCost(country) {\n-\n+s\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n console.log(getShippingCost(\"Germany\")); // \"Sorry, there is no delivery to your country\"\n"
+                },
+                {
+                    "date": 1697840901849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function getShippingCost(country) {\n-s\n+switch \n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n console.log(getShippingCost(\"Germany\")); // \"Sorry, there is no delivery to your country\"\n"
+                },
+                {
+                    "date": 1697841057812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,11 @@\n function getShippingCost(country) {\n-switch \n+    switch (type) {\n+        case \"starter\": return 0;\n+        case \"professional\": return 20;\n+        case \"organization\": return 50;\n+        default: return \"Invalid subscription type!\"\n+      }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n console.log(getShippingCost(\"Germany\")); // \"Sorry, there is no delivery to your country\"\n"
+                },
+                {
+                    "date": 1697841069416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function getShippingCost(country) {\n-    switch (type) {\n+    switch (country) {\n         case \"starter\": return 0;\n         case \"professional\": return 20;\n         case \"organization\": return 50;\n         default: return \"Invalid subscription type!\"\n"
+                },
+                {
+                    "date": 1697841142596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     switch (country) {\n         case \"starter\": return 0;\n         case \"professional\": return 20;\n         case \"organization\": return 50;\n-        default: return \"Invalid subscription type!\"\n+        default: return \"Sorry, there is no delivery to your country\"\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841210955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function getShippingCost(country) {\n     switch (country) {\n-        case \"starter\": return 0;\n+        case \"China\": return 0;\n         case \"professional\": return 20;\n         case \"organization\": return 50;\n         default: return \"Sorry, there is no delivery to your country\"\n       }\n"
+                },
+                {
+                    "date": 1697841443161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function getShippingCost(country) {\n     switch (country) {\n-        case \"China\": return 0;\n-        case \"professional\": return 20;\n+        case \"China\": return 100;\n+        case \"Chile\": return 20;\n         case \"organization\": return 50;\n         default: return \"Sorry, there is no delivery to your country\"\n       }\n }\n"
+                },
+                {
+                    "date": 1697841448620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function getShippingCost(country) {\n     switch (country) {\n         case \"China\": return 100;\n-        case \"Chile\": return 20;\n+        case \"Chile\": return 250;\n         case \"organization\": return 50;\n         default: return \"Sorry, there is no delivery to your country\"\n       }\n }\n"
+                },
+                {
+                    "date": 1697841469003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function getShippingCost(country) {\n     switch (country) {\n         case \"China\": return 100;\n         case \"Chile\": return 250;\n-        case \"organization\": return 50;\n+        case \"Australia\": return 50;\n         default: return \"Sorry, there is no delivery to your country\"\n       }\n }\n \n"
+                },
+                {
+                    "date": 1697841474518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function getShippingCost(country) {\n     switch (country) {\n         case \"China\": return 100;\n         case \"Chile\": return 250;\n-        case \"Australia\": return 50;\n+        case \"Australia\": return 170;\n         default: return \"Sorry, there is no delivery to your country\"\n       }\n }\n \n"
+                },
+                {
+                    "date": 1697841485734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n     switch (country) {\n         case \"China\": return 100;\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n+        case \"Australia\": return 170;\n         default: return \"Sorry, there is no delivery to your country\"\n       }\n }\n \n"
+                },
+                {
+                    "date": 1697841501645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     switch (country) {\n         case \"China\": return 100;\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n-        case \"Australia\": return 170;\n+        case \"Jamaica\": return 170;\n         default: return \"Sorry, there is no delivery to your country\"\n       }\n }\n \n"
+                },
+                {
+                    "date": 1697841591513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,11 @@\n     switch (country) {\n         case \"China\": return 100;\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n-        case \"Jamaica\": return 170;\n+        case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n+        \n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841598227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        \n+        r\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841603307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        r\n+        return \n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841633892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return \n+        return \"Shipping to <country> will cost <price> credits\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841639420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return \"Shipping to <country> will cost <price> credits\n+        return \"Shipping to <country> will cost <price> credits`\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841648533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return \"Shipping to <country> will cost <price> credits`\n+        return Shipping to <country> will cost <price> credits`\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841655299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return Shipping to <country> will cost <price> credits`\n+        return `Shipping to <country will cost <price> credits`\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841667546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return `Shipping to <country will cost <price> credits`\n+        return `Shipping to <country{country} will cost <price> credits`\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841676650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return `Shipping to <country{country} will cost <price> credits`\n+        return `Shipping to ${country} will cost <price> credits`\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841687090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return `Shipping to ${country} will cost <price> credits`\n+        return `Shipping to ${country} will cost <price>{} credits`\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841695458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return `Shipping to ${country} will cost <price>{} credits`\n+        return `Shipping to ${country} will cost <price>{price} credits`\n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841966071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n-        return `Shipping to ${country} will cost <price>{price} credits`\n+        \n       }\n }\n \n console.log(getShippingCost(\"Australia\")); // \"Shipping to Australia will cost 170 credits\"\n"
+                },
+                {
+                    "date": 1697841976154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function getShippingCost(country) {\n     switch (country) {\n-        case \"China\": return 100;\n+        case \"China\": return `Shipping to ${country} will cost ${price} credits`;\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n"
+                },
+                {
+                    "date": 1697841984499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function getShippingCost(country) {\n     switch (country) {\n-        case \"China\": return `Shipping to ${country} will cost ${price} credits`;\n+        case \"China\": return `Shipping to ${country} will cost ${} credits`;\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n"
+                },
+                {
+                    "date": 1697841995698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function getShippingCost(country) {\n     switch (country) {\n-        case \"China\": return `Shipping to ${country} will cost ${} credits`;\n+        case \"China\": return `Shipping to ${country} will cost ${100 credits`;\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n"
+                },
+                {
+                    "date": 1697842001110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function getShippingCost(country) {\n     switch (country) {\n-        case \"China\": return `Shipping to ${country} will cost ${100 credits`;\n+        case \"China\": return `Shipping to ${country} will cost 100 credits`;\n         case \"Chile\": return 250;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n"
+                },
+                {
+                    "date": 1697842020479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n function getShippingCost(country) {\n     switch (country) {\n         case \"China\": return `Shipping to ${country} will cost 100 credits`;\n-        case \"Chile\": return 250;\n+        case \"Chile\": return `Shipping to ${country} will cost 100 credits`;\n         case \"Australia\": return 170;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n         \n"
+                },
+                {
+                    "date": 1697842029683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function getShippingCost(country) {\n     switch (country) {\n         case \"China\": return `Shipping to ${country} will cost 100 credits`;\n-        case \"Chile\": return `Shipping to ${country} will cost 100 credits`;\n-        case \"Australia\": return 170;\n+        case \"Chile\": return `Shipping to ${country} will cost 250 credits`;\n+        case \"Australia\": return `Shipping to ${country} will cost 100 credits`;\n         case \"Jamaica\": return 120;\n         default: return \"Sorry, there is no delivery to your country\"\n         \n       }\n"
+                },
+                {
+                    "date": 1697842039589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n function getShippingCost(country) {\n     switch (country) {\n         case \"China\": return `Shipping to ${country} will cost 100 credits`;\n         case \"Chile\": return `Shipping to ${country} will cost 250 credits`;\n-        case \"Australia\": return `Shipping to ${country} will cost 100 credits`;\n-        case \"Jamaica\": return 120;\n+        case \"Australia\": return `Shipping to ${country} will cost 170 credits`;\n+        case \"Jamaica\": return `Shipping to ${country} will cost 100 credits`;\n         default: return \"Sorry, there is no delivery to your country\"\n         \n       }\n }\n"
+                }
+            ],
+            "date": 1697840819272,
+            "name": "Commit-0",
+            "content": "fu"
+        }
+    ]
+}

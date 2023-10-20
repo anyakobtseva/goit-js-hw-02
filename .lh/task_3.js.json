@@ -1,0 +1,142 @@
+{
+    "sourceFile": "task_3.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 31,
+            "patches": [
+                {
+                    "date": 1697839949909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697839958361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n function checkForSpam(message) {\n-    const m = message.toUpperCase();\n-    \"fdsf\".to\n+    const m = message.to\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697839968392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function checkForSpam(message) {\n-    const m = message.to\n+    const m = message.toUpperCase();\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697839976252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n+    \n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697839981999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    \n+    const\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697839987105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    const\n+    const \n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697839994031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    const \n+    const a = \n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840077204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    const a = \n+    \n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840322418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    \n+    m.\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840335684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-function checkForSpam(message) {\n+function checkForSpam(message: String) {\n     const m = message.toUpperCase();\n-    m.\n+    m.in\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840341306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function checkForSpam(message: String) {\n+function checkForSpam(message: S) {\n     const m = message.toUpperCase();\n     m.in\n }\n \n"
+                },
+                {
+                    "date": 1697840347036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function checkForSpam(message: S) {\n+function checkForSpam(message) {\n     const m = message.toUpperCase();\n     m.in\n }\n \n"
+                },
+                {
+                    "date": 1697840353123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function checkForSpam(message) {\n-    const m = message.toUpperCase();\n+    const m: st = message.toUpperCase();\n     m.in\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n"
+                },
+                {
+                    "date": 1697840358790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n function checkForSpam(message) {\n-    const m: st = message.toUpperCase();\n+    const m: String = message.toUpperCase();\n     m.in\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n"
+                },
+                {
+                    "date": 1697840369525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n-    const m: String = message.toUpperCase();\n-    m.in\n+    const m = message.toUpperCase();\n+    m.\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840394389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.\n+    m.includes(fiName);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840428156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(fiName);\n+    m.includes(spam або sale);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840458348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(spam або sale);\n+    m.includesspam  sale);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840464679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includesspam  sale);\n+    m.includes•spam  sale);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840470128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes•spam  sale);\n+    m.includesªspam  sale);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840482590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includesªspam  sale);\n+    m.includes(spam  sale);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840509913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(spam  sale);\n+    m.includes(:spam  sale);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840516796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(:spam  sale);\n+    m.includes(\"spam\"  sale);\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840530559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(\"spam\"  sale);\n+    m.includes(\"spam\");\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840551675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(\"spam\");\n+    m.includes(\"\");\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840569377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(\"\");\n+    m.includes(\"SPAM\")\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840580312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(\"SPAM\")\n+    m.includes(\"SPAM\") ||\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840592286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(\"SPAM\") ||\n+    m.includes(\"SPAM\") || m.includes(\"SPAM\")\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840604496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(\"SPAM\") || m.includes(\"SPAM\")\n+    m.includes(\"SPAM\") || m.includes(\"S\")\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840624715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-    m.includes(\"SPAM\") || m.includes(\"S\")\n+   RE m.includes(\"SPAM\") || m.includes(\"SALE\")\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840630289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-   RE m.includes(\"SPAM\") || m.includes(\"SALE\")\n+   re m.includes(\"SPAM\") || m.includes(\"SALE\")\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                },
+                {
+                    "date": 1697840647624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function checkForSpam(message) {\n     const m = message.toUpperCase();\n-   re m.includes(\"SPAM\") || m.includes(\"SALE\")\n+   return m.includes(\"SPAM\") || m.includes(\"SALE\");\n }\n \n console.log(checkForSpam(\"Latest technology news\")); // false\n console.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\n"
+                }
+            ],
+            "date": 1697839949909,
+            "name": "Commit-0",
+            "content": "function checkForSpam(message) {\n    const m = message.toUpperCase();\n    \"fdsf\".to\n}\n\nconsole.log(checkForSpam(\"Latest technology news\")); // false\nconsole.log(checkForSpam(\"JavaScript weekly newsletter\")); // false\nconsole.log(checkForSpam(\"Get best sale offers now!\")); // true\nconsole.log(checkForSpam(\"Amazing SalE, only tonight!\")); // true\nconsole.log(checkForSpam(\"Trust me, this is not a spam message\")); // true\nconsole.log(checkForSpam(\"Get rid of sPaM emails. Our book in on sale!\")); // true\nconsole.log(checkForSpam(\"[SPAM] How to earn fast money?\")); // true"
+        }
+    ]
+}
